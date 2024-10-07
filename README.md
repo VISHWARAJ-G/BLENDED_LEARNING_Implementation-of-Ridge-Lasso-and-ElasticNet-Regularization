@@ -123,7 +123,7 @@ Ridge - Mean Squared Error: 39011712.54, R² Score: 0.51
 Lasso - Mean Squared Error: 12616438.15, R² Score: 0.84
 ElasticNet - Mean Squared Error: 8666607.74, R² Score: 0.89)
 ```
-![alt text](image.png) 
+![alt text](<Screenshot (894).png>)
 
 ## Result:
 Thus, Ridge, Lasso, and ElasticNet regularization models were implemented successfully to predict the car price and the model's performance was evaluated using R² score and Mean Squared Error.
