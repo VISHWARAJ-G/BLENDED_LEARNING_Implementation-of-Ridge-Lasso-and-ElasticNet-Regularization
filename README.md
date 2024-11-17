@@ -9,15 +9,30 @@ To implement Ridge, Lasso, and ElasticNet regularization models using polynomial
 
 ## Algorithm
 
-1. Import the necessary libraries.
-2. Load the dataset.
-3. Preprocess the data (handle missing values, encode categorical variables).
-4. Split the data into features (X) and target (y).
-5. Create polynomial features.
-6. Set up pipelines for Ridge, Lasso, and ElasticNet models.
-7. Fit the models on the training data.
-8. Evaluate model performance using R² score and Mean Squared Error.
-9. Compare the results.
+#### 1. Import Libraries
+
+* Import pandas for data handling, scikit-learn for preprocessing, modeling, and evaluation.
+#### 2. Load Dataset
+
+* Load the dataset from encoded_car_data.csv.
+#### 3. Select Features and Target
+
+* Separate features (X) and target (y) for the model.
+#### 4. Split Dataset
+
+* Divide data into training and testing sets (80-20 ratio).
+#### 5. Define Models and Pipelines
+
+* Create pipelines for Ridge, Lasso, and ElasticNet regression models with polynomial feature transformation (degree = 2).
+#### 6. Train Models
+
+* Fit each regression model pipeline on the training data.
+#### 7. Make Predictions
+
+* Predict car prices for the test set using the trained models.
+#### 8. Evaluate Models
+
+* Calculate Mean Squared Error (MSE), R-squared value
 
 ## Program:
 ```
@@ -25,6 +40,7 @@ To implement Ridge, Lasso, and ElasticNet regularization models using polynomial
 Program to implement Ridge, Lasso, and ElasticNet regularization using pipelines.
 Developed by: Vishwaraj G.
 RegisterNumber: 212223220125
+*/
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import PolynomialFeatures
